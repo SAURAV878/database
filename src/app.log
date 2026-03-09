@@ -1,0 +1,28 @@
+2026-03-09T09:59:51.564Z info: server is running in port 8000
+2026-03-09T10:05:11.640Z http: ::1 - - [09/Mar/2026:10:05:11 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+
+2026-03-09T10:05:19.811Z info: test route was hit
+2026-03-09T10:05:19.815Z http: ::1 - - [09/Mar/2026:10:05:19 +0000] "GET /test HTTP/1.1" 200 32 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+
+2026-03-09T10:05:19.858Z http: ::1 - - [09/Mar/2026:10:05:19 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/test" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+
+2026-03-09T10:08:34.207Z info: server is running in port 8000
+2026-03-09T10:08:57.199Z error: System Alert: this is the test error
+2026-03-09T10:08:57.208Z http: ::1 - - [09/Mar/2026:10:08:57 +0000] "GET /error HTTP/1.1" 500 21 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+
+2026-03-09T10:12:44.745Z info: server is running in port 8000
+2026-03-09T10:12:50.938Z info: test route was hit
+2026-03-09T10:12:54.628Z info: test route was hit
+2026-03-09T10:13:09.339Z info: test route was hit
+2026-03-09T10:13:13.444Z info: server is running in port 8000
+2026-03-09T10:13:15.790Z info: test route was hit
+2026-03-09T10:13:15.800Z http: ::1 - - [09/Mar/2026:10:13:15 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+
+2026-03-09T10:14:10.209Z info: server is running in port 8000
+2026-03-09T10:14:15.445Z info: test route was hit
+2026-03-09T10:14:15.455Z info: ::1 - - [09/Mar/2026:10:14:15 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-09T10:47:11.766Z info: server is running in port 8000
+2026-03-09T10:47:22.406Z info: ::1 - - [09/Mar/2026:10:47:22 +0000] "GET /warn HTTP/1.1" 404 143 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-09T10:47:38.255Z info: server is running in port 8000
+2026-03-09T10:47:41.884Z warn: Suspsted User
+2026-03-09T10:47:41.893Z info: ::1 - - [09/Mar/2026:10:47:41 +0000] "GET /warn HTTP/1.1" 200 14 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
