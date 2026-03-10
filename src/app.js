@@ -1,6 +1,7 @@
 import express from 'express';
 import morgan from 'morgan';
 import logger from './utlis/logger.js';
+import postRoutes from './routes/post.js'
 
 
 const app = express();
@@ -12,6 +13,9 @@ const stream = {
 app.use(morgan('combined', { stream }));
 
 app.use(express.json());
+
+app.use('/posts', postRoutes);
+
 
 app.get('/test', (req, res) => {
     logger.info('test route was hit');

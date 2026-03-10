@@ -1,21 +1,15 @@
-import { DataTypes } from "sequelize";
-import sequelize from "../config/database.js";
+import { DataTypes} from "sequelize";
+import sequelize from "../config/database.js"
 
-const Post = sequelize.define('Post', {
+
+const Post = sequelize.define("Post", {
     title: {
-        type:DataTypes.STRING,
-        allowNull: false,
-        validate: {
-            len: [3, 20]
-        }
+        type: DataTypes.STRING,
+        allowNull:false
     },
     content: {
-        type:DataTypes.TEXT,
+        type: DataTypes.TEXT,
     },
-    status: {
-        type:DataTypes.ENUM('draft', 'published'),
-        defaultValue: 'draft',
-    }
-})
+});
 
 export default Post;

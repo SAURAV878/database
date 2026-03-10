@@ -72,3 +72,182 @@
 2026-03-10T07:46:00.405Z info: Testing validation: sending a title that is to short
 2026-03-10T07:46:00.408Z warn: VALICATION BLOCKED: SequelizeValidationError: Validation error: Validation len on title failed
 2026-03-10T07:46:00.414Z info: server is ruuning at 8000
+2026-03-10T08:25:56.291Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T08:25:56.295Z info: Database Connected
+2026-03-10T08:25:56.298Z debug: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Posts' AND TABLE_SCHEMA = 'mastery_db'
+2026-03-10T08:25:56.303Z debug: Executing (default): SHOW FULL COLUMNS FROM `Posts`;
+2026-03-10T08:25:56.310Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T08:25:56.317Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+2026-03-10T08:25:56.334Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `content` `content` TEXT;
+2026-03-10T08:25:56.348Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `status` `status` ENUM('draft', 'published') DEFAULT 'draft';
+2026-03-10T08:25:56.361Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+2026-03-10T08:25:56.378Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+2026-03-10T08:25:56.392Z debug: Executing (default): SHOW INDEX FROM `Posts`
+2026-03-10T08:25:56.400Z info: Database synchronized (Tables Created)
+2026-03-10T08:25:56.407Z info: server is ruuning at 8000
+2026-03-10T08:35:44.420Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T08:35:44.429Z debug: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Posts' AND TABLE_SCHEMA = 'mastery_db'
+2026-03-10T08:35:44.437Z debug: Executing (default): SHOW FULL COLUMNS FROM `Posts`;
+2026-03-10T08:35:44.447Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T08:35:44.454Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+2026-03-10T08:35:44.474Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `content` `content` TEXT;
+2026-03-10T08:35:44.488Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `status` `status` ENUM('draft', 'published') DEFAULT 'draft';
+2026-03-10T08:35:44.504Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+2026-03-10T08:35:44.518Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+2026-03-10T08:35:44.533Z debug: Executing (default): SHOW INDEX FROM `Posts`
+2026-03-10T08:35:44.546Z info: 🚀 Master Server is LIVE on port 8000
+2026-03-10T08:41:34.328Z http: ::1 - - [10/Mar/2026:08:41:34 +0000] "POST /posts HTTP/1.1" 500 1097 "-" "bruno-runtime/3.1.4"
+2026-03-10T08:41:55.879Z http: ::1 - - [10/Mar/2026:08:41:55 +0000] "POST /posts HTTP/1.1" 500 1097 "-" "bruno-runtime/3.1.4"
+2026-03-10T08:54:29.182Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T08:54:29.191Z debug: Executing (default): SELECT TABLE_NAME FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_TYPE = 'BASE TABLE' AND TABLE_NAME = 'Posts' AND TABLE_SCHEMA = 'mastery_db'
+2026-03-10T08:54:29.198Z debug: Executing (default): SHOW FULL COLUMNS FROM `Posts`;
+2026-03-10T08:54:29.206Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T08:54:29.213Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `title` `title` VARCHAR(255) NOT NULL;
+2026-03-10T08:54:29.233Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `content` `content` TEXT;
+2026-03-10T08:54:29.248Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `status` `status` ENUM('draft', 'published') DEFAULT 'draft';
+2026-03-10T08:54:29.276Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `createdAt` `createdAt` DATETIME NOT NULL;
+2026-03-10T08:54:29.289Z debug: Executing (default): ALTER TABLE `Posts` CHANGE `updatedAt` `updatedAt` DATETIME NOT NULL;
+2026-03-10T08:54:29.301Z debug: Executing (default): SHOW INDEX FROM `Posts`
+2026-03-10T08:54:29.315Z info:  Master Server is LIVE on port 8000
+2026-03-10T08:54:34.613Z debug: 🏗️ Building Post: hey yama
+2026-03-10T08:54:34.624Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T08:54:34.639Z info: ✨ Created Successfully: ID 2
+2026-03-10T08:54:34.647Z http: ::1 - - [10/Mar/2026:08:54:34 +0000] "POST /posts HTTP/1.1" 201 154 "-" "bruno-runtime/3.1.4"
+2026-03-10T08:54:46.734Z debug: 🔍 Sniper Search: ID 2
+2026-03-10T08:54:46.749Z debug: Executing (default): SELECT `id`, `title`, `content`, `status`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T08:54:46.755Z info: ✅ Found: hey yama
+2026-03-10T08:54:46.757Z http: ::1 - - [10/Mar/2026:08:54:46 +0000] "GET /posts/2 HTTP/1.1" 200 154 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:30:49.990Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:30:49.996Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:31:01.118Z debug: Building Post: hey yama
+2026-03-10T13:31:01.140Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:31:01.148Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:31:01.156Z http: ::1 - - [10/Mar/2026:13:31:01 +0000] "POST /posts HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:31:12.989Z debug: Building Post: hey yama
+2026-03-10T13:31:12.997Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:31:12.999Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:31:13.001Z http: ::1 - - [10/Mar/2026:13:31:13 +0000] "POST /posts HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:31:56.852Z debug: Building Post: hey yama
+2026-03-10T13:31:56.862Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:31:56.864Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:31:56.866Z http: ::1 - - [10/Mar/2026:13:31:56 +0000] "POST /posts HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:32:09.995Z debug: Building Post: hey it me
+2026-03-10T13:32:10.003Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:32:10.005Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:32:10.007Z http: ::1 - - [10/Mar/2026:13:32:10 +0000] "POST /posts HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:32:12.739Z debug: Building Post: hey it me
+2026-03-10T13:32:12.741Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:32:12.744Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:32:12.746Z http: ::1 - - [10/Mar/2026:13:32:12 +0000] "POST /posts HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:06.231Z debug: Building Post: hey buddha
+2026-03-10T13:34:06.239Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:34:06.240Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:34:06.242Z http: ::1 - - [10/Mar/2026:13:34:06 +0000] "POST /posts HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:08.707Z debug: Building Post: hey buddha
+2026-03-10T13:34:08.710Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:34:08.712Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:34:08.713Z http: ::1 - - [10/Mar/2026:13:34:08 +0000] "POST /posts HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:20.043Z http: ::1 - - [10/Mar/2026:13:34:20 +0000] "GET /posts HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:23.466Z debug:  Sniper Search: ID 2
+2026-03-10T13:34:23.480Z debug: Executing (default): SELECT `id`, `title`, `content`, `status`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T13:34:23.482Z error:  Controller Error: Unknown column 'status' in 'field list'
+2026-03-10T13:34:23.484Z http: ::1 - - [10/Mar/2026:13:34:23 +0000] "GET /posts/2 HTTP/1.1" 500 35 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:25.738Z debug:  Sniper Search: ID 2
+2026-03-10T13:34:25.739Z debug: Executing (default): SELECT `id`, `title`, `content`, `status`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T13:34:25.741Z error:  Controller Error: Unknown column 'status' in 'field list'
+2026-03-10T13:34:25.743Z http: ::1 - - [10/Mar/2026:13:34:25 +0000] "GET /posts/2 HTTP/1.1" 500 35 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:31.660Z debug:  Sniper Search: ID 2
+2026-03-10T13:34:31.663Z debug: Executing (default): SELECT `id`, `title`, `content`, `status`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T13:34:31.666Z error:  Controller Error: Unknown column 'status' in 'field list'
+2026-03-10T13:34:31.667Z http: ::1 - - [10/Mar/2026:13:34:31 +0000] "GET /posts/2 HTTP/1.1" 500 35 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:33.605Z debug:  Sniper Search: ID 1
+2026-03-10T13:34:33.607Z debug: Executing (default): SELECT `id`, `title`, `content`, `status`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-10T13:34:33.609Z error:  Controller Error: Unknown column 'status' in 'field list'
+2026-03-10T13:34:33.610Z http: ::1 - - [10/Mar/2026:13:34:33 +0000] "GET /posts/1 HTTP/1.1" 500 35 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:35.208Z debug:  Sniper Search: ID 2
+2026-03-10T13:34:35.210Z debug: Executing (default): SELECT `id`, `title`, `content`, `status`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T13:34:35.213Z error:  Controller Error: Unknown column 'status' in 'field list'
+2026-03-10T13:34:35.214Z http: ::1 - - [10/Mar/2026:13:34:35 +0000] "GET /posts/2 HTTP/1.1" 500 35 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:34:57.067Z debug:  Sniper Search: ID 2
+2026-03-10T13:34:57.075Z debug: Executing (default): SELECT `id`, `title`, `content`, `status`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T13:34:57.077Z error:  Controller Error: Unknown column 'status' in 'field list'
+2026-03-10T13:34:57.079Z http: ::1 - - [10/Mar/2026:13:34:57 +0000] "GET /posts/2 HTTP/1.1" 500 35 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:35:03.983Z debug: Building Post: hey buddha
+2026-03-10T13:35:03.985Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:35:03.988Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:35:03.989Z http: ::1 - - [10/Mar/2026:13:35:03 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:35:09.712Z debug: Building Post: hey buddha
+2026-03-10T13:35:09.714Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T13:35:09.716Z error: System Failure: Unknown column 'status' in 'field list'
+2026-03-10T13:35:09.717Z http: ::1 - - [10/Mar/2026:13:35:09 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:39:52.462Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:39:52.470Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:39:55.271Z debug: Building Post: hey buddha
+2026-03-10T13:39:55.281Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:39:55.285Z error: System Failure: Unknown column 'updatedAt' in 'field list'
+2026-03-10T13:39:55.293Z http: ::1 - - [10/Mar/2026:13:39:55 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:45:54.207Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:45:54.215Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:45:58.678Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:45:58.686Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:46:16.550Z debug: Building Post: hey buddha
+2026-03-10T13:46:16.550Z error: System Failure: Post is not defined
+2026-03-10T13:46:16.554Z http: ::1 - - [10/Mar/2026:13:46:16 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:53:37.922Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:53:37.928Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:53:44.925Z debug: Building Post: hey buddha
+2026-03-10T13:53:44.936Z debug: Executing (default): INSERT INTO `POsts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:53:44.942Z error: System Failure: Table 'mastery_db.POsts' doesn't exist
+2026-03-10T13:53:44.951Z http: ::1 - - [10/Mar/2026:13:53:44 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:53:50.357Z debug: Building Post: hey buddha
+2026-03-10T13:53:50.361Z debug: Executing (default): INSERT INTO `POsts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:53:50.363Z error: System Failure: Table 'mastery_db.POsts' doesn't exist
+2026-03-10T13:53:50.365Z http: ::1 - - [10/Mar/2026:13:53:50 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:54:12.345Z debug: Building Post: hey buddha
+2026-03-10T13:54:12.357Z debug: Executing (default): INSERT INTO `POsts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:54:12.361Z error: System Failure: Table 'mastery_db.POsts' doesn't exist
+2026-03-10T13:54:12.363Z http: ::1 - - [10/Mar/2026:13:54:12 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:54:17.423Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:54:17.430Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:54:21.184Z debug: Building Post: hey buddha
+2026-03-10T13:54:21.194Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:54:21.198Z error: System Failure: Unknown column 'updatedAt' in 'field list'
+2026-03-10T13:54:21.205Z http: ::1 - - [10/Mar/2026:13:54:21 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:54:47.418Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:54:47.426Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:54:50.092Z debug: Building Post: hey buddha
+2026-03-10T13:54:50.100Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:54:50.104Z error: System Failure: Unknown column 'updatedAt' in 'field list'
+2026-03-10T13:54:50.108Z http: ::1 - - [10/Mar/2026:13:54:50 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:55:52.922Z debug:  Sniper Search: ID 2
+2026-03-10T13:55:52.934Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T13:55:52.937Z error:  Controller Error: Unknown column 'updatedAt' in 'field list'
+2026-03-10T13:55:52.939Z http: ::1 - - [10/Mar/2026:13:55:52 +0000] "GET /posts/2 HTTP/1.1" 500 35 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:58:31.283Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T13:58:31.289Z info:  Master Server is LIVE on port 8000
+2026-03-10T13:58:36.833Z debug:  Sniper Search: ID 2
+2026-03-10T13:58:36.841Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-10T13:58:36.848Z warn:  Post not found: ID 2
+2026-03-10T13:58:36.857Z http: ::1 - - [10/Mar/2026:13:58:36 +0000] "GET /posts/2 HTTP/1.1" 404 28 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:58:49.189Z debug: Building Post: hey buddha
+2026-03-10T13:58:49.209Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:58:49.218Z error: System Failure: Field 'id' doesn't have a default value
+2026-03-10T13:58:49.221Z http: ::1 - - [10/Mar/2026:13:58:49 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:58:51.300Z debug: Building Post: hey buddha
+2026-03-10T13:58:51.302Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:58:51.304Z error: System Failure: Field 'id' doesn't have a default value
+2026-03-10T13:58:51.305Z http: ::1 - - [10/Mar/2026:13:58:51 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T13:59:05.826Z debug: Building Post: hey buddha
+2026-03-10T13:59:05.834Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T13:59:05.837Z error: System Failure: Field 'id' doesn't have a default value
+2026-03-10T13:59:05.839Z http: ::1 - - [10/Mar/2026:13:59:05 +0000] "POST /posts/ HTTP/1.1" 500 33 "-" "bruno-runtime/3.1.4"
+2026-03-10T14:01:32.999Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T14:01:33.005Z info:  Master Server is LIVE on port 8000
+2026-03-10T14:01:37.062Z debug: Building Post: hey buddha
+2026-03-10T14:01:37.074Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?);
+2026-03-10T14:01:37.089Z info:  Created Successfully: ID 1
+2026-03-10T14:01:37.099Z http: ::1 - - [10/Mar/2026:14:01:37 +0000] "POST /posts/ HTTP/1.1" 201 135 "-" "bruno-runtime/3.1.4"
+2026-03-10T14:01:48.761Z debug:  Sniper Search: ID 1
+2026-03-10T14:01:48.774Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-10T14:01:48.781Z info: Found: hey buddha
+2026-03-10T14:01:48.784Z http: ::1 - - [10/Mar/2026:14:01:48 +0000] "GET /posts/1 HTTP/1.1" 200 135 "-" "bruno-runtime/3.1.4"
