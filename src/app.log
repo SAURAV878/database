@@ -26,3 +26,6 @@
 2026-03-09T10:47:38.255Z info: server is running in port 8000
 2026-03-09T10:47:41.884Z warn: Suspsted User
 2026-03-09T10:47:41.893Z info: ::1 - - [09/Mar/2026:10:47:41 +0000] "GET /warn HTTP/1.1" 200 14 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-10T05:19:07.127Z error: Access denied for user ''@'localhost' (using password: NO)
+2026-03-10T05:20:14.779Z error: connection failed SequelizeAccessDeniedError: Access denied for user ''@'localhost' (using password: NO)
+2026-03-10T05:21:09.523Z error: SequelizeAccessDeniedError: Access denied for user ''@'localhost' (using password: NO)

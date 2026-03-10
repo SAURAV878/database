@@ -7,6 +7,8 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: pass123
       MYSQL_DATABASE: mastery_db
+      MYSQL_USER: saurav
+      MYSQL_PASSWORD: pass123
     ports:
       - "3305:3306" # Connect local 3305 to container 3306
     volumes:

@@ -1,0 +1,74 @@
+2026-03-10T05:30:00.501Z error: SequelizeAccessDeniedError: Access denied for user 'saurav'@'172.19.0.1' (using password: YES)
+2026-03-10T05:32:44.251Z error: SequelizeAccessDeniedError: Access denied for user ''@'localhost' (using password: NO)
+2026-03-10T05:33:54.073Z error: SequelizeAccessDeniedError: Access denied for user ''@'localhost' (using password: NO)
+2026-03-10T05:39:34.808Z error: SequelizeConnectionError: Access denied for user 'saurav'@'%' to database 'mastery-mysql'
+2026-03-10T05:39:41.313Z error: SequelizeConnectionError: Access denied for user 'saurav'@'%' to database 'mastery-mysql'
+2026-03-10T05:40:03.913Z error: SequelizeConnectionError: Access denied for user 'saurav'@'%' to database 'mastery-mysql'
+2026-03-10T05:42:32.443Z error: SequelizeConnectionError: Access denied for user 'saurav'@'%' to database 'mastery-db'
+2026-03-10T05:43:36.231Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T05:43:36.235Z info: Database Connected
+2026-03-10T05:43:36.238Z info: server is ruuning at 8000
+2026-03-10T05:48:49.464Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T05:48:49.468Z info: Database Connected
+2026-03-10T05:48:49.470Z info: server is ruuning at 8000
+2026-03-10T05:49:10.667Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T05:49:10.671Z info: Database Connected
+2026-03-10T05:49:10.673Z info: server is ruuning at 8000
+2026-03-10T07:22:49.160Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T07:22:49.165Z info: Database Connected
+2026-03-10T07:22:49.166Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T07:22:49.168Z info: Database synchronized (Tables Created)
+2026-03-10T07:22:49.171Z info: server is ruuning at 8000
+2026-03-10T07:27:34.259Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T07:27:34.263Z info: Database Connected
+2026-03-10T07:27:34.265Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:27:34.274Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T07:27:34.282Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:27:34.288Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:27:34.294Z debug: Executing (default): CREATE TABLE IF NOT EXISTS `Posts` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `content` TEXT, `status` ENUM('draft', 'published') DEFAULT true, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2026-03-10T07:27:34.299Z error: SequelizeDatabaseError: Invalid default value for 'status'
+2026-03-10T07:27:50.527Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T07:27:50.530Z info: Database Connected
+2026-03-10T07:27:50.532Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:27:50.538Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T07:27:50.543Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:27:50.549Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:27:50.556Z debug: Executing (default): CREATE TABLE IF NOT EXISTS `Posts` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `content` TEXT, `status` ENUM('draft', 'published') DEFAULT true, `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2026-03-10T07:27:50.562Z error: SequelizeDatabaseError: Invalid default value for 'status'
+2026-03-10T07:29:47.824Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T07:29:47.828Z info: Database Connected
+2026-03-10T07:29:47.831Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:29:47.841Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T07:29:47.847Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:29:47.853Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:29:47.861Z debug: Executing (default): CREATE TABLE IF NOT EXISTS `Posts` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `content` TEXT, `status` ENUM('draft', 'published') DEFAULT 'draft', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2026-03-10T07:29:47.893Z debug: Executing (default): SHOW INDEX FROM `Posts`
+2026-03-10T07:29:47.905Z info: Database synchronized (Tables Created)
+2026-03-10T07:29:47.917Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T07:29:47.938Z info: sucess
+2026-03-10T07:29:47.944Z info: server is ruuning at 8000
+2026-03-10T07:34:13.159Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T07:34:13.163Z info: Database Connected
+2026-03-10T07:34:13.165Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:34:13.187Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T07:34:13.192Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:34:13.196Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:34:13.201Z debug: Executing (default): CREATE TABLE IF NOT EXISTS `Posts` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `content` TEXT, `status` ENUM('draft', 'published') DEFAULT 'draft', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2026-03-10T07:34:13.232Z debug: Executing (default): SHOW INDEX FROM `Posts`
+2026-03-10T07:34:13.245Z info: Database synchronized (Tables Created)
+2026-03-10T07:34:13.246Z info: Testing validation: sending a title that is to short
+2026-03-10T07:34:13.251Z warn: VALICATION BLOCKED: Validation len on title failed
+2026-03-10T07:34:13.255Z info: server is ruuning at 8000
+2026-03-10T07:46:00.288Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-10T07:46:00.292Z info: Database Connected
+2026-03-10T07:46:00.294Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:46:00.318Z debug: Executing (default): SELECT CONSTRAINT_NAME as constraint_name,CONSTRAINT_NAME as constraintName,CONSTRAINT_SCHEMA as constraintSchema,CONSTRAINT_SCHEMA as constraintCatalog,TABLE_NAME as tableName,TABLE_SCHEMA as tableSchema,TABLE_SCHEMA as tableCatalog,COLUMN_NAME as columnName,REFERENCED_TABLE_SCHEMA as referencedTableSchema,REFERENCED_TABLE_SCHEMA as referencedTableCatalog,REFERENCED_TABLE_NAME as referencedTableName,REFERENCED_COLUMN_NAME as referencedColumnName FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE where TABLE_NAME = 'Posts' AND CONSTRAINT_NAME!='PRIMARY' AND CONSTRAINT_SCHEMA='mastery_db' AND REFERENCED_TABLE_NAME IS NOT NULL;
+2026-03-10T07:46:00.323Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:46:00.330Z debug: Executing (default): DROP TABLE IF EXISTS `Posts`;
+2026-03-10T07:46:00.337Z debug: Executing (default): CREATE TABLE IF NOT EXISTS `Posts` (`id` INTEGER NOT NULL auto_increment , `title` VARCHAR(255) NOT NULL, `content` TEXT, `status` ENUM('draft', 'published') DEFAULT 'draft', `createdAt` DATETIME NOT NULL, `updatedAt` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB;
+2026-03-10T07:46:00.370Z debug: Executing (default): SHOW INDEX FROM `Posts`
+2026-03-10T07:46:00.381Z info: Database synchronized (Tables Created)
+2026-03-10T07:46:00.395Z debug: Executing (default): INSERT INTO `Posts` (`id`,`title`,`content`,`status`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?);
+2026-03-10T07:46:00.405Z info: Testing validation: sending a title that is to short
+2026-03-10T07:46:00.408Z warn: VALICATION BLOCKED: SequelizeValidationError: Validation error: Validation len on title failed
+2026-03-10T07:46:00.414Z info: server is ruuning at 8000
