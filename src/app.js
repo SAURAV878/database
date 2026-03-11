@@ -1,7 +1,8 @@
 import express from 'express';
 import morgan from 'morgan';
-import logger from './utlis/logger.js';
-import postRoutes from './routes/post.js'
+import logger from './utils/logger.js';
+import postRoutes from './routes/post.js';
+import userRoutes from './routes/user.js';
 
 
 const app = express();
@@ -15,6 +16,8 @@ app.use(morgan('combined', { stream }));
 app.use(express.json());
 
 app.use('/posts', postRoutes);
+
+app.use('/', userRoutes);
 
 
 app.get('/test', (req, res) => {

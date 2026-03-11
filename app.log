@@ -251,3 +251,61 @@
 2026-03-10T14:01:48.774Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
 2026-03-10T14:01:48.781Z info: Found: hey buddha
 2026-03-10T14:01:48.784Z http: ::1 - - [10/Mar/2026:14:01:48 +0000] "GET /posts/1 HTTP/1.1" 200 135 "-" "bruno-runtime/3.1.4"
+2026-03-11T07:56:33.245Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T07:56:33.251Z info:  Master Server is LIVE on port 8000
+2026-03-11T07:57:58.977Z http: ::1 - - [11/Mar/2026:07:57:58 +0000] "POST /register HTTP/1.1" 404 148 "-" "bruno-runtime/3.1.4"
+2026-03-11T07:58:45.876Z http: ::1 - - [11/Mar/2026:07:58:45 +0000] "POST /users HTTP/1.1" 404 145 "-" "bruno-runtime/3.1.4"
+2026-03-11T07:59:13.481Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T07:59:13.490Z info:  Master Server is LIVE on port 8000
+2026-03-11T07:59:15.437Z debug: Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`password`,`salt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);
+2026-03-11T07:59:15.459Z http: ::1 - - [11/Mar/2026:07:59:15 +0000] "POST /users HTTP/1.1" 201 32 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:30:41.187Z http: ::1 - - [11/Mar/2026:08:30:41 +0000] "POST /login HTTP/1.1" 404 145 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:38:29.903Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T08:38:29.911Z info:  Master Server is LIVE on port 8000
+2026-03-11T08:38:32.053Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'saurav@gmail.com';
+2026-03-11T08:38:32.067Z http: ::1 - - [11/Mar/2026:08:38:32 +0000] "POST /login HTTP/1.1" 200 31 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:44:22.986Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T08:44:22.992Z info:  Master Server is LIVE on port 8000
+2026-03-11T08:44:27.467Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'saurav@gmail.com';
+2026-03-11T08:44:27.478Z error: "expriesIn" is not allowed in "options"
+2026-03-11T08:44:27.485Z http: ::1 - - [11/Mar/2026:08:44:27 +0000] "POST /login HTTP/1.1" 500 24 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:44:32.135Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'saurav@gmail.com';
+2026-03-11T08:44:32.141Z error: "expriesIn" is not allowed in "options"
+2026-03-11T08:44:32.143Z http: ::1 - - [11/Mar/2026:08:44:32 +0000] "POST /login HTTP/1.1" 500 24 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:53:25.605Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T08:53:25.612Z info:  Master Server is LIVE on port 8000
+2026-03-11T08:53:29.317Z error: notNull Violation: User.username cannot be null
+2026-03-11T08:53:29.323Z http: ::1 - - [11/Mar/2026:08:53:29 +0000] "POST / HTTP/1.1" 500 48 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:53:45.176Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'saurav@gmail.com';
+2026-03-11T08:53:45.188Z error: "expriesIn" is not allowed in "options"
+2026-03-11T08:53:45.190Z http: ::1 - - [11/Mar/2026:08:53:45 +0000] "POST /login HTTP/1.1" 500 24 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:54:04.292Z http: ::1 - - [11/Mar/2026:08:54:04 +0000] "POST /register HTTP/1.1" 404 148 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:54:36.397Z http: ::1 - - [11/Mar/2026:08:54:36 +0000] "POST /register HTTP/1.1" 404 148 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:55:07.556Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T08:55:07.566Z info:  Master Server is LIVE on port 8000
+2026-03-11T08:55:09.671Z debug: Executing (default): INSERT INTO `Users` (`id`,`username`,`email`,`password`,`salt`,`createdAt`,`updatedAt`) VALUES (DEFAULT,?,?,?,?,?,?);
+2026-03-11T08:55:09.699Z http: ::1 - - [11/Mar/2026:08:55:09 +0000] "POST /register HTTP/1.1" 201 32 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:55:19.908Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'hero@gmail.com';
+2026-03-11T08:55:19.917Z error: "expriesIn" is not allowed in "options"
+2026-03-11T08:55:19.918Z http: ::1 - - [11/Mar/2026:08:55:19 +0000] "POST /login HTTP/1.1" 500 24 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:56:47.647Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T08:56:47.653Z info:  Master Server is LIVE on port 8000
+2026-03-11T08:56:51.091Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'hero@gmail.com';
+2026-03-11T08:56:51.100Z error: Error: "expriesIn" is not allowed in "options"
+2026-03-11T08:56:51.106Z http: ::1 - - [11/Mar/2026:08:56:51 +0000] "POST /login HTTP/1.1" 500 24 "-" "bruno-runtime/3.1.4"
+2026-03-11T08:57:27.768Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T08:57:27.774Z info:  Master Server is LIVE on port 8000
+2026-03-11T08:57:31.487Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'hero@gmail.com';
+2026-03-11T08:57:31.504Z http: ::1 - - [11/Mar/2026:08:57:31 +0000] "POST /login HTTP/1.1" 200 203 "-" "bruno-runtime/3.1.4"
+2026-03-11T09:32:50.508Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T09:32:50.516Z info:  Master Server is LIVE on port 8000
+2026-03-11T09:40:25.351Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T09:40:25.358Z info: 🔐 ENCRYPTED (The Scramble): a3fff1aad9b9e903d486330c63a711d9:e367a137b7b8596f794bd71f2598ac07e6e7f0322827ad717a89745b9b1403e6a164622f063f8068fa4dec2af9f20f9b
+2026-03-11T09:40:25.359Z info: 🔓 DECRYPTED (The Reveal): Saurav is a Senior Backend Engineer!
+2026-03-11T09:40:25.359Z info: ✅ SUCCESS: The Two-Way Street is perfect!
+2026-03-11T09:40:25.360Z info:  Master Server is LIVE on port 8000
+2026-03-11T09:42:28.597Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-11T09:42:28.604Z info: 🔐 ENCRYPTED : 0acf61a0538cf085fd6cf5bbca352540:2ede14ec0e20a0896874a08fa8d758fcb2831aafc0f93daa597251bab5fdd1346a3adbc1892977a58af46e9541a115d9
+2026-03-11T09:42:28.605Z info: DECRYPTED : Saurav is a Senior Backend Engineer!
+2026-03-11T09:42:28.605Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-11T09:42:28.606Z info:  Master Server is LIVE on port 8000

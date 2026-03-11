@@ -1,5 +1,5 @@
 import Post from "../models/post.js";
-import logger from "../utlis/logger.js";
+import logger from "../utils/logger.js";
 
 export const getPost = async (req, res) => {
     try {
