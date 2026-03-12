@@ -309,3 +309,133 @@
 2026-03-11T09:42:28.605Z info: DECRYPTED : Saurav is a Senior Backend Engineer!
 2026-03-11T09:42:28.605Z info: SUCCESS: The Two-Way Street is perfect!
 2026-03-11T09:42:28.606Z info:  Master Server is LIVE on port 8000
+2026-03-12T06:21:24.637Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T06:21:24.652Z info:  ENCRYPTED : 82c54de2651699db66c33b005942713d:34f5b57bf035e8959af95178456670158ab41eeab05aeb28a71e7e41d8d9656d
+2026-03-12T06:21:24.653Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T06:21:24.653Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T06:21:24.654Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:07:27.535Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:07:27.542Z info:  ENCRYPTED : b6085113099cb023726e1fa2261f388b:3d681a5d23caa2b626f1b4b811b99047c0999b3e84e4423ff99138bf808a416b
+2026-03-12T08:07:27.543Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:07:27.543Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:07:27.544Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:09:11.023Z http: ::1 - - [12/Mar/2026:08:09:11 +0000] "GET /keys HTTP/1.1" 200 2224 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:11:33.190Z error: Cannot destructure property 'publicKey' of 'req.boby' as it is undefined.
+2026-03-12T08:11:33.192Z http: ::1 - - [12/Mar/2026:08:11:33 +0000] "POST /encrypt HTTP/1.1" 400 45 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:11:56.331Z error: Cannot destructure property 'publicKey' of 'req.boby' as it is undefined.
+2026-03-12T08:11:56.333Z http: ::1 - - [12/Mar/2026:08:11:56 +0000] "POST /encrypt HTTP/1.1" 400 45 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:12:10.490Z http: ::1 - - [12/Mar/2026:08:12:10 +0000] "GET /keys HTTP/1.1" 200 2224 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:12:34.568Z error: Cannot destructure property 'publicKey' of 'req.boby' as it is undefined.
+2026-03-12T08:12:34.569Z http: ::1 - - [12/Mar/2026:08:12:34 +0000] "POST /encrypt HTTP/1.1" 400 45 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:13:23.704Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:13:23.712Z info:  ENCRYPTED : 18cd1f347ab68282551a946267761112:14184ac27e575d6e0b3d36155f64206863839943331a9209c6016f61b05a526a
+2026-03-12T08:13:23.713Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:13:23.713Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:13:23.714Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:13:26.275Z error: TypeError: Cannot destructure property 'publicKey' of 'req.boby' as it is undefined.
+2026-03-12T08:13:26.280Z http: ::1 - - [12/Mar/2026:08:13:26 +0000] "POST /encrypt HTTP/1.1" 400 46 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:14:33.471Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:14:33.483Z info:  ENCRYPTED : 0de55aaf7c5d11b11add41ffe3d5667c:8666b28dae5413bc99d0f0fa8ba5163d53ef9c50f68fe7a9b733b320893ff070
+2026-03-12T08:14:33.483Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:14:33.484Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:14:33.485Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:14:35.576Z error: Error: error:1E08010C:DECODER routines::unsupported
+2026-03-12T08:14:35.581Z http: ::1 - - [12/Mar/2026:08:14:35 +0000] "POST /encrypt HTTP/1.1" 400 46 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:14:51.660Z http: ::1 - - [12/Mar/2026:08:14:51 +0000] "GET /keys HTTP/1.1" 200 2224 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:15:22.413Z error: Error: error:1E08010C:DECODER routines::unsupported
+2026-03-12T08:15:22.415Z http: ::1 - - [12/Mar/2026:08:15:22 +0000] "POST /encrypt HTTP/1.1" 400 46 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:15:49.857Z error: Error: error:1E08010C:DECODER routines::unsupported
+2026-03-12T08:15:49.859Z http: ::1 - - [12/Mar/2026:08:15:49 +0000] "POST /encrypt HTTP/1.1" 400 46 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:20:50.254Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:20:50.264Z info:  ENCRYPTED : 125c44f142baeb6183d5e1d6f033eed8:9bd6a1d73a705d2d53d7201b772f31dd67b45b8831e3f659c94a608d0d98af2b
+2026-03-12T08:20:50.265Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:20:50.265Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:20:50.266Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:21:01.480Z http: ::1 - - [12/Mar/2026:08:21:01 +0000] "GET /keys HTTP/1.1" 200 2224 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:21:25.619Z http: ::1 - - [12/Mar/2026:08:21:25 +0000] "POST /encrypt HTTP/1.1" 200 360 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:23:17.390Z http: ::1 - - [12/Mar/2026:08:23:17 +0000] "POST /decrypt HTTP/1.1" 404 147 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:23:52.821Z http: ::1 - - [12/Mar/2026:08:23:52 +0000] "POST /decrypt HTTP/1.1" 404 147 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:24:19.186Z http: ::1 - - [12/Mar/2026:08:24:19 +0000] "POST /encrypt HTTP/1.1" 200 360 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:24:42.387Z http: ::1 - - [12/Mar/2026:08:24:42 +0000] "POST /decrypt HTTP/1.1" 404 147 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:25:50.479Z http: ::1 - - [12/Mar/2026:08:25:50 +0000] "POST /decrypt HTTP/1.1" 404 147 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:25:58.785Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:25:58.792Z info:  ENCRYPTED : 0a02a53cfbb84074ca9879fa1e25774f:c400eb38747fa94dea05982fa6967d60518a80ce2f3f854b140002ebed865062
+2026-03-12T08:25:58.793Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:25:58.793Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:25:58.793Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:26:03.475Z http: ::1 - - [12/Mar/2026:08:26:03 +0000] "POST /encrypt HTTP/1.1" 200 360 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:26:16.710Z error: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:26:16.712Z http: ::1 - - [12/Mar/2026:08:26:16 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:26:58.603Z error: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:26:58.606Z http: ::1 - - [12/Mar/2026:08:26:58 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:27:16.039Z error: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:27:16.042Z http: ::1 - - [12/Mar/2026:08:27:16 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:27:18.507Z error: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:27:18.509Z http: ::1 - - [12/Mar/2026:08:27:18 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:27:22.451Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:27:22.461Z info:  ENCRYPTED : d4f72260312c5e528bc5ae09761b5865:0bdef73e6e5aae071e602ec4d6e5af1164e4acc7c2ee63c3b52dddedcc0fab90
+2026-03-12T08:27:22.462Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:27:22.462Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:27:22.463Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:27:24.166Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:27:24.171Z http: ::1 - - [12/Mar/2026:08:27:24 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:31:56.523Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:31:56.532Z info:  ENCRYPTED : 7b054ff9dbe008e3d69ba471a86614dd:e22f762270e16d82040f8cf7ccafc4dfaaf49335e3e024eb86ad93a88fc41348
+2026-03-12T08:31:56.533Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:31:56.533Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:31:56.534Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:31:58.850Z http: ::1 - - [12/Mar/2026:08:31:58 +0000] "GET /keys HTTP/1.1" 200 2224 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:29.723Z http: ::1 - - [12/Mar/2026:08:32:29 +0000] "POST /encrypt HTTP/1.1" 200 360 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:42.347Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:42.349Z http: ::1 - - [12/Mar/2026:08:32:42 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:43.414Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:43.416Z http: ::1 - - [12/Mar/2026:08:32:43 +0000] "POST /decrypt/ HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:43.936Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:43.938Z http: ::1 - - [12/Mar/2026:08:32:43 +0000] "POST /decrypt/ HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:44.125Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:44.127Z http: ::1 - - [12/Mar/2026:08:32:44 +0000] "POST /decrypt/ HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:44.880Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:44.881Z http: ::1 - - [12/Mar/2026:08:32:44 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:45.379Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:45.380Z http: ::1 - - [12/Mar/2026:08:32:45 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:45.551Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:45.552Z http: ::1 - - [12/Mar/2026:08:32:45 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:45.723Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:45.725Z http: ::1 - - [12/Mar/2026:08:32:45 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:45.874Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:45.875Z http: ::1 - - [12/Mar/2026:08:32:45 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:46.038Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:46.039Z http: ::1 - - [12/Mar/2026:08:32:46 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:46.512Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:46.513Z http: ::1 - - [12/Mar/2026:08:32:46 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:46.961Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:46.962Z http: ::1 - - [12/Mar/2026:08:32:46 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:47.410Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:47.411Z http: ::1 - - [12/Mar/2026:08:32:47 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:32:56.448Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:32:56.450Z http: ::1 - - [12/Mar/2026:08:32:56 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:33:04.336Z error: Error: error:02000079:rsa routines::oaep decoding error
+2026-03-12T08:33:04.338Z http: ::1 - - [12/Mar/2026:08:33:04 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:33:05.342Z error: Error: error:02000079:rsa routines::oaep decoding error
+2026-03-12T08:33:05.343Z http: ::1 - - [12/Mar/2026:08:33:05 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:34:11.156Z error: Error: error:02000079:rsa routines::oaep decoding error
+2026-03-12T08:34:11.158Z http: ::1 - - [12/Mar/2026:08:34:11 +0000] "POST /decrypt HTTP/1.1" 400 53 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:48:24.073Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:48:24.080Z info:  ENCRYPTED : 10d6fabec56285b74d3ace93a144a82f:7e4dda230594d83670882dbeb9523c267aeb88176683df067f6ef54cdb818dd7
+2026-03-12T08:48:24.080Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:48:24.081Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:48:24.081Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:48:30.040Z http: ::1 - - [12/Mar/2026:08:48:30 +0000] "GET /keys HTTP/1.1" 200 2224 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:48:51.225Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key.key" property must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:48:51.227Z http: ::1 - - [12/Mar/2026:08:48:51 +0000] "POST /encrypt HTTP/1.1" 400 46 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:48:57.164Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key.key" property must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:48:57.166Z http: ::1 - - [12/Mar/2026:08:48:57 +0000] "POST /encrypt HTTP/1.1" 400 46 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:49:39.964Z error: TypeError [ERR_INVALID_ARG_TYPE]: The "key.key" property must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, DataView, KeyObject, or CryptoKey. Received undefined
+2026-03-12T08:49:39.966Z http: ::1 - - [12/Mar/2026:08:49:39 +0000] "POST /encrypt HTTP/1.1" 400 46 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:49:43.920Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-12T08:49:43.927Z info:  ENCRYPTED : efdadb0bb20f3d78baa26ec1a5f540d4:7b5d64f002ff2335c4564b0c855081135ad0519595823770ddb593d8fce08be5
+2026-03-12T08:49:43.927Z info: DECRYPTED : Saurav a  Backend 
+2026-03-12T08:49:43.927Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-12T08:49:43.928Z info:  Master Server is LIVE on port 8000
+2026-03-12T08:49:45.749Z http: ::1 - - [12/Mar/2026:08:49:45 +0000] "POST /encrypt HTTP/1.1" 200 360 "-" "bruno-runtime/3.1.4"
+2026-03-12T08:50:35.925Z http: ::1 - - [12/Mar/2026:08:50:35 +0000] "POST /decrypt HTTP/1.1" 200 33 "-" "bruno-runtime/3.1.4"

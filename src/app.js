@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import logger from './utils/logger.js';
 import postRoutes from './routes/post.js';
 import userRoutes from './routes/user.js';
+import securityRoutes from './routes/security.js'
 
 
 const app = express();
@@ -18,6 +19,8 @@ app.use(express.json());
 app.use('/posts', postRoutes);
 
 app.use('/', userRoutes);
+
+app.use('/', securityRoutes);
 
 
 app.get('/test', (req, res) => {

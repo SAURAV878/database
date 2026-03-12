@@ -15,11 +15,11 @@ try {
 }
 
 const laboratoryTest = () => {
-    const originalMessage = "Saurav is a Senior Backend Engineer!";
+    const originalMessage = "Saurav a  Backend ";
     
  
     const scrambled = encrypt(originalMessage);
-    logger.info(`🔐 ENCRYPTED : ${scrambled}`);
+    logger.info(` ENCRYPTED : ${scrambled}`);
 
     const recovered = decrypt(scrambled);
     logger.info(`DECRYPTED : ${recovered}`);
