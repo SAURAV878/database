@@ -439,3 +439,76 @@
 2026-03-12T08:49:43.928Z info:  Master Server is LIVE on port 8000
 2026-03-12T08:49:45.749Z http: ::1 - - [12/Mar/2026:08:49:45 +0000] "POST /encrypt HTTP/1.1" 200 360 "-" "bruno-runtime/3.1.4"
 2026-03-12T08:50:35.925Z http: ::1 - - [12/Mar/2026:08:50:35 +0000] "POST /decrypt HTTP/1.1" 200 33 "-" "bruno-runtime/3.1.4"
+2026-03-13T05:43:19.389Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-13T05:43:19.396Z info:  ENCRYPTED : 7eb1ea6d3b4a0a445c9b2b84ac6bfa6d:acaa1e563666b044dac5897d666089246c71844eacca2de4c85c873a85cb1f8c
+2026-03-13T05:43:19.396Z info: DECRYPTED : Saurav a  Backend 
+2026-03-13T05:43:19.396Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-13T05:43:19.397Z info:  Master Server is LIVE on port 8000
+2026-03-13T08:27:05.996Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-13T08:27:06.002Z info:  ENCRYPTED : ae5531090272cb2f299652fe74581bd0:b54ac3162d26c62c512f31abd91c628fc490c93cb793be62ce3f05222b2a1e20
+2026-03-13T08:27:06.003Z info: DECRYPTED : Saurav a  Backend 
+2026-03-13T08:27:06.003Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-13T08:27:06.003Z info:  Master Server is LIVE on port 8000
+2026-03-13T08:27:08.968Z info: test route was hit
+2026-03-13T08:27:08.974Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:27:08 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:27:34.898Z info: test route was hit
+2026-03-13T08:27:34.900Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:27:34 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:27:36.443Z info: test route was hit
+2026-03-13T08:27:36.445Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:27:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:27:36.563Z info: test route was hit
+2026-03-13T08:27:36.564Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:27:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:27:36.703Z info: test route was hit
+2026-03-13T08:27:36.705Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:27:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:27:36.830Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-13T08:27:37.002Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-13T08:27:37.135Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-13T08:27:37.289Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-13T08:27:54.520Z http: ::1 - - [13/Mar/2026:08:27:54 +0000] "GET / HTTP/1.1" 404 139 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:01.203Z info: test route was hit
+2026-03-13T08:28:01.206Z http: ::1 - - [13/Mar/2026:08:28:01 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:01.255Z http: ::1 - - [13/Mar/2026:08:28:01 +0000] "GET /favicon.ico HTTP/1.1" 404 150 "http://localhost:8000/test" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:03.073Z info: test route was hit
+2026-03-13T08:28:03.074Z http: ::1 - - [13/Mar/2026:08:28:03 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:06.622Z info: test route was hit
+2026-03-13T08:28:06.624Z http: ::1 - - [13/Mar/2026:08:28:06 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:06.765Z warn: Rate limit is execced by IP: ::1
+2026-03-13T08:28:06.919Z warn: Rate limit is execced by IP: ::1
+2026-03-13T08:28:07.055Z warn: Rate limit is execced by IP: ::1
+2026-03-13T08:28:07.188Z warn: Rate limit is execced by IP: ::1
+2026-03-13T08:28:07.368Z warn: Rate limit is execced by IP: ::1
+2026-03-13T08:28:10.794Z warn: Rate limit is execced by IP: ::1
+2026-03-13T08:28:29.363Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-13T08:28:29.370Z info:  ENCRYPTED : baff1f5ba4cf21689a026dffeb8d06d6:afd90c43bff53b533e0efbc41bd10abbb06718194a9d04dfdd167458dce2536e
+2026-03-13T08:28:29.370Z info: DECRYPTED : Saurav a  Backend 
+2026-03-13T08:28:29.371Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-13T08:28:29.371Z info:  Master Server is LIVE on port 8000
+2026-03-13T08:28:31.402Z info: test route was hit
+2026-03-13T08:28:31.408Z http: ::1 - - [13/Mar/2026:08:28:31 +0000] "GET /test HTTP/1.1" 200 32 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:31.526Z info: test route was hit
+2026-03-13T08:28:31.528Z http: ::1 - - [13/Mar/2026:08:28:31 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:31.674Z info: test route was hit
+2026-03-13T08:28:31.676Z http: ::1 - - [13/Mar/2026:08:28:31 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:31.822Z info: test route was hit
+2026-03-13T08:28:31.823Z http: ::1 - - [13/Mar/2026:08:28:31 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:31.971Z info: test route was hit
+2026-03-13T08:28:31.972Z http: ::1 - - [13/Mar/2026:08:28:31 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-13T08:28:41.977Z info: test route was hit
+2026-03-13T08:28:41.979Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:28:41 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:28:43.244Z info: test route was hit
+2026-03-13T08:28:43.245Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:28:43 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:28:43.407Z info: test route was hit
+2026-03-13T08:28:43.409Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:28:43 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:28:43.541Z info: test route was hit
+2026-03-13T08:28:43.542Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:28:43 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:28:43.659Z info: test route was hit
+2026-03-13T08:28:43.660Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:28:43 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:32:58.254Z info: test route was hit
+2026-03-13T08:32:58.255Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:32:58 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:33:00.138Z info: test route was hit
+2026-03-13T08:33:00.139Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:33:00 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:33:00.172Z info: test route was hit
+2026-03-13T08:33:00.176Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:33:00 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:33:01.034Z info: test route was hit
+2026-03-13T08:33:01.036Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:33:01 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:33:01.783Z info: test route was hit
+2026-03-13T08:33:01.784Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:33:01 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"

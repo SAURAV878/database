@@ -4,6 +4,8 @@ import logger from './utils/logger.js';
 import postRoutes from './routes/post.js';
 import userRoutes from './routes/user.js';
 import securityRoutes from './routes/security.js'
+import rateLimit from 'express-rate-limit';
+
 
 
 const app = express();
@@ -11,6 +13,24 @@ const app = express();
 const stream = {
     write: (message) => logger.http(message.trim()),
 };
+
+const limiter = rateLimit ({
+    windowMs: 1 * 60 * 1000,
+    limit: 5,
+    standardHeaders: 'draft-8',
+    legacyHeaders: false,
+    
+    handler: (req, res, next, options) => {
+        logger.warn(`Rate limit is execced by IP: ${req.ip}`);
+        res.status(options.statusCode).json({
+            error: "To many requests",
+            message: "You are clicking too fast!please wait 1min",
+            retryAfter: `${options.windowMs / 1000} seconds`
+        });
+    }
+});
+
+app.use(limiter);
 
 app.use(morgan('combined', { stream }));
 
