@@ -616,3 +616,23 @@
 2026-03-15T06:11:43.669Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:06:11:43 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
 2026-03-15T06:11:56.119Z info: Cache hit: returning data fo id 1 from memory
 2026-03-15T06:11:56.121Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:06:11:56 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T08:14:11.154Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T08:14:11.161Z info:  ENCRYPTED : ebf11cfa778d3f59aeb761adb9a09f77:43cbc30f7bba23abdd483a2f9cf550d5535bb154a954857d3f346049001e600b
+2026-03-15T08:14:11.161Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T08:14:11.161Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T08:14:11.162Z info:  Master Server is LIVE on port 8000
+2026-03-15T08:14:13.733Z warn: Request Blocked: "title" length must be at least 5 characters long
+2026-03-15T08:14:13.739Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:08:14:13 +0000] "POST /posts/ HTTP/1.1" 400 63 "-" "bruno-runtime/3.1.4"
+2026-03-15T08:14:20.895Z warn: Request Blocked: "title" length must be at least 5 characters long
+2026-03-15T08:14:20.897Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:08:14:20 +0000] "POST /posts/ HTTP/1.1" 400 63 "-" "bruno-runtime/3.1.4"
+2026-03-15T08:14:21.103Z warn: Request Blocked: "title" length must be at least 5 characters long
+2026-03-15T08:14:21.104Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:08:14:21 +0000] "POST /posts/ HTTP/1.1" 400 63 "-" "bruno-runtime/3.1.4"
+2026-03-15T08:14:21.312Z warn: Request Blocked: "title" length must be at least 5 characters long
+2026-03-15T08:14:21.313Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:08:14:21 +0000] "POST /posts/ HTTP/1.1" 400 63 "-" "bruno-runtime/3.1.4"
+2026-03-15T08:14:21.465Z warn: Request Blocked: "title" length must be at least 5 characters long
+2026-03-15T08:14:21.466Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:08:14:21 +0000] "POST /posts/ HTTP/1.1" 400 63 "-" "bruno-runtime/3.1.4"
+2026-03-15T08:14:21.767Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T08:14:21.937Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T08:14:22.093Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T08:14:22.223Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T08:14:54.088Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
