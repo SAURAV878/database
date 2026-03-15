@@ -636,3 +636,54 @@
 2026-03-15T08:14:22.093Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
 2026-03-15T08:14:22.223Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
 2026-03-15T08:14:54.088Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T09:42:47.513Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T09:42:47.521Z info:  ENCRYPTED : 73dd9d67f92ed7394569279383309d0a:5947dd767c92ebcd49b662324c9390221c050101ca470c8a105e1f3a28fff9a2
+2026-03-15T09:42:47.521Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T09:42:47.522Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T09:42:47.522Z info:  Master Server is LIVE on port 8000
+2026-03-15T09:42:51.455Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:42:51 +0000] "GET /users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:42:55.710Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:42:55 +0000] "GET /Users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:43:06.072Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:43:06 +0000] "GET /User HTTP/1.1" 404 143 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:43:11.622Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:43:11 +0000] "POST / HTTP/1.1" 404 140 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:43:16.133Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:43:16 +0000] "GET /Users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:43:36.562Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T09:47:41.347Z error: The "password" argument must be of type string or an instance of ArrayBuffer, Buffer, TypedArray, or DataView. Received undefined
+2026-03-15T09:47:41.348Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:47:41 +0000] "POST /register HTTP/1.1" 500 48 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:47:49.289Z error: Error: WHERE parameter "email" has invalid "undefined" value
+2026-03-15T09:47:49.290Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:47:49 +0000] "POST /login HTTP/1.1" 500 24 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:48:50.826Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `role`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'hero@gmail.com';
+2026-03-15T09:48:50.843Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:48:50 +0000] "POST /login HTTP/1.1" 200 222 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:49:55.747Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:49:55 +0000] "GET /Users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:50:26.587Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:50:26 +0000] "GET /login HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:51:00.888Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:51:00 +0000] "GET /login HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:51:32.887Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:51:32 +0000] "GET /login HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:51:58.270Z error: Error: WHERE parameter "email" has invalid "undefined" value
+2026-03-15T09:51:58.271Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:51:58 +0000] "POST /login HTTP/1.1" 500 24 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:52:37.736Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `role`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'hero@gmail.com';
+2026-03-15T09:52:37.743Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:52:37 +0000] "POST /login HTTP/1.1" 200 222 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:53:20.711Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:53:20 +0000] "GET /users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:53:47.392Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:53:47 +0000] "GET /users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:53:58.497Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:53:58 +0000] "GET /Users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:54:44.789Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:54:44 +0000] "GET /users HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:55:47.859Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:55:47 +0000] "GET /login HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T09:55:51.387Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:09:55:51 +0000] "GET /login HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:07:31.724Z warn: Access Denied: User user tried to hit an Admin route
+2026-03-15T10:07:31.725Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:07:31 +0000] "DELETE /admin HTTP/1.1" 403 51 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:09:15.322Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T10:09:15.328Z info:  ENCRYPTED : 4039ef96d97a4faa69777b8401ca23a9:2e94cf9eb966526ce6b082b3be147a9c2dd81405e7a663a0a361e2518534ff89
+2026-03-15T10:09:15.329Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T10:09:15.329Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T10:09:15.330Z info:  Master Server is LIVE on port 8000
+2026-03-15T10:09:23.477Z warn: Access Denied: User user tried to hit an Admin route
+2026-03-15T10:09:23.484Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:09:23 +0000] "DELETE /admin HTTP/1.1" 403 51 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:10:24.367Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `role`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'saurav@gmail.com';
+2026-03-15T10:10:24.380Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:10:24 +0000] "POST /login HTTP/1.1" 200 225 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:10:35.713Z warn: Access Denied: User user tried to hit an Admin route
+2026-03-15T10:10:35.715Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:10:35 +0000] "DELETE /admin HTTP/1.1" 403 51 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:10:38.904Z warn: Access Denied: User user tried to hit an Admin route
+2026-03-15T10:10:38.905Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:10:38 +0000] "DELETE /admin HTTP/1.1" 403 51 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:10:47.974Z warn: Access Denied: User user tried to hit an Admin route
+2026-03-15T10:10:47.975Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:10:47 +0000] "DELETE /admin HTTP/1.1" 403 51 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:12:02.516Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `role`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'hero@gmail.com';
+2026-03-15T10:12:02.523Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:12:02 +0000] "POST /login HTTP/1.1" 200 223 "-" "bruno-runtime/3.1.4"
+2026-03-15T10:12:12.897Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:12:12 +0000] "DELETE /admin HTTP/1.1" 200 45 "-" "bruno-runtime/3.1.4"
