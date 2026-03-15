@@ -1,11 +1,21 @@
 import Post from "../models/post.js";
 import logger from "../utils/logger.js";
 
+
+const simpleCache = {};
+
+
 export const getPost = async (req, res) => {
     try {
         const { id } = req.params;
-        logger.debug(` Sniper Search: ID ${id}`);
+        const cacheKey = `post-${id}`;
 
+        if (simpleCache[cacheKey]) {
+            logger.info(`Cache hit: returning data fo id ${id} from memory`);
+            return res.json(simpleCache[cacheKey]);
+        }
+
+        logger.debug(` Sniper Search: ID ${id}`);
         const post = await Post.findByPk(id);
 
         if (!post) {
@@ -14,8 +24,12 @@ export const getPost = async (req, res) => {
             return res.status(404).json({ message: "Post not found" });
         }
 
+        simpleCache[cacheKey] = post;
+        
+
         logger.info(`Found: ${post.title}`);
         res.json(post);
+
     } catch (error) {
         logger.error(` Controller Error: ${error.message}`);
         res.status(500).json({ message: "Internal Server Error" });

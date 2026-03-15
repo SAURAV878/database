@@ -512,3 +512,107 @@
 2026-03-13T08:33:01.036Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:33:01 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
 2026-03-13T08:33:01.783Z info: test route was hit
 2026-03-13T08:33:01.784Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:33:01 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:34:32.755Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-13T08:34:32.762Z info:  ENCRYPTED : e707210e3ecf9044af794d880a40f27f:a1d5200b936b880c73411f37042689ae162be821a88e2b9685cf763f11d1238b
+2026-03-13T08:34:32.762Z info: DECRYPTED : Saurav a  Backend 
+2026-03-13T08:34:32.762Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-13T08:34:32.763Z info:  Master Server is LIVE on port 8000
+2026-03-13T08:34:36.128Z info: test route was hit
+2026-03-13T08:34:36.134Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:34:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:34:36.243Z info: test route was hit
+2026-03-13T08:34:36.246Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:34:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:34:36.374Z info: test route was hit
+2026-03-13T08:34:36.377Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:34:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:34:36.489Z info: test route was hit
+2026-03-13T08:34:36.490Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:34:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:34:36.669Z info: test route was hit
+2026-03-13T08:34:36.671Z http: ::ffff:127.0.0.1 - - [13/Mar/2026:08:34:36 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-13T08:34:37.356Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-13T08:34:42.730Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-13T08:35:04.838Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-13T08:35:06.133Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T04:33:08.002Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T04:33:08.014Z info:  ENCRYPTED : d83f2e77d152c1b727e7db30567890d1:d9ba6fa9f1b97eaeee3e964cae9fd5f5f79cb99fd3b1558d30033e528a4f0d7e
+2026-03-15T04:33:08.014Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T04:33:08.015Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T04:33:08.015Z info:  Master Server is LIVE on port 8000
+2026-03-15T04:33:11.402Z info: test route was hit
+2026-03-15T04:33:11.407Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:04:33:11 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-15T04:33:13.797Z info: test route was hit
+2026-03-15T04:33:13.799Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:04:33:13 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-15T04:33:14.398Z info: test route was hit
+2026-03-15T04:33:14.400Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:04:33:14 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-15T04:33:14.901Z info: test route was hit
+2026-03-15T04:33:14.902Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:04:33:14 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-15T04:33:15.388Z info: test route was hit
+2026-03-15T04:33:15.390Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:04:33:15 +0000] "GET /test HTTP/1.1" 200 32 "-" "bruno-runtime/3.1.4"
+2026-03-15T04:33:15.914Z warn: Rate limit is execced by IP: ::ffff:127.0.0.1
+2026-03-15T05:36:32.113Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T05:36:32.122Z info:  ENCRYPTED : cf4c619b229f01bb8b04d0c96327be13:5568dbc339b9519b77267bd179eb76445398327a898b279cf6321795292e59dc
+2026-03-15T05:36:32.122Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T05:36:32.123Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T05:36:32.123Z info:  Master Server is LIVE on port 8000
+2026-03-15T05:36:47.182Z debug:  Sniper Search: ID 2
+2026-03-15T05:36:47.196Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-15T05:36:47.228Z warn:  Post not found: ID 2
+2026-03-15T05:36:47.238Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:36:47 +0000] "GET /posts/2 HTTP/1.1" 404 28 "-" "bruno-runtime/3.1.4"
+2026-03-15T05:36:57.461Z debug:  Sniper Search: ID 1
+2026-03-15T05:36:57.470Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-15T05:36:57.474Z info: Found: hey buddha
+2026-03-15T05:36:57.476Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:36:57 +0000] "GET /posts/1 HTTP/1.1" 200 135 "-" "bruno-runtime/3.1.4"
+2026-03-15T05:37:09.409Z info: Cache hit: returning data fo id 1 from memory
+2026-03-15T05:37:09.411Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:37:09 +0000] "GET /posts/1 HTTP/1.1" 200 135 "-" "bruno-runtime/3.1.4"
+2026-03-15T05:38:08.052Z info: Cache hit: returning data fo id 1 from memory
+2026-03-15T05:38:08.053Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:38:08 +0000] "GET /posts/1 HTTP/1.1" 200 135 "-" "bruno-runtime/3.1.4"
+2026-03-15T05:39:09.646Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T05:39:09.653Z info:  ENCRYPTED : 11626e073e6e71341a010278a0fac26e:cafefa385995915ab78ce463cec74467d12b264feb1f4a6c141c8b29a2124156
+2026-03-15T05:39:09.653Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T05:39:09.653Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T05:39:09.654Z info:  Master Server is LIVE on port 8000
+2026-03-15T05:39:13.108Z debug:  Sniper Search: ID 1
+2026-03-15T05:39:13.116Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-15T05:39:13.122Z info: Found: hacked title
+2026-03-15T05:39:13.129Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:39:13 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T05:39:18.156Z info: Cache hit: returning data fo id 1 from memory
+2026-03-15T05:39:18.159Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:39:18 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T05:39:27.862Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T05:39:27.869Z info:  ENCRYPTED : c977c80b5f8fa07b66ed42cc76a442b6:56e063a5fa91ec34cf80ee26dc388ca4aff99a50bfd4615216d12093d120a711
+2026-03-15T05:39:27.870Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T05:39:27.870Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T05:39:27.870Z info:  Master Server is LIVE on port 8000
+2026-03-15T05:39:30.731Z debug:  Sniper Search: ID 1
+2026-03-15T05:39:30.738Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-15T05:39:30.743Z info: Found: hacked title
+2026-03-15T05:39:30.751Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:39:30 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T05:39:31.927Z info: Cache hit: returning data fo id 1 from memory
+2026-03-15T05:39:31.929Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:05:39:31 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T06:09:17.906Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T06:09:17.916Z info:  ENCRYPTED : bb5eeb1f54a6fde7d370087c04f74397:a3c3b0f6edc133e9a8c522b7a8bb56b7183fcf58e7fb787f65d78efe8bb1dcc3
+2026-03-15T06:09:17.917Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T06:09:17.917Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T06:09:17.918Z info:  Master Server is LIVE on port 8000
+2026-03-15T06:09:20.986Z debug:  Sniper Search: ID 1
+2026-03-15T06:09:20.993Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-15T06:09:21.000Z info: Found: hacked title
+2026-03-15T06:09:21.009Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:06:09:21 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T06:09:23.046Z info: Cache hit: returning data fo id 1 from memory
+2026-03-15T06:09:23.048Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:06:09:23 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T06:09:33.125Z info: test route was hit
+2026-03-15T06:09:33.127Z http: ::1 - - [15/Mar/2026:06:09:33 +0000] "GET /test HTTP/1.1" 200 32 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-15T06:09:33.160Z http: ::1 - - [15/Mar/2026:06:09:33 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-15T06:09:38.756Z info: test route was hit
+2026-03-15T06:09:38.758Z http: ::1 - - [15/Mar/2026:06:09:38 +0000] "GET /test HTTP/1.1" 304 - "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-15T06:09:38.798Z http: ::1 - - [15/Mar/2026:06:09:38 +0000] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 187 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+2026-03-15T06:11:32.434Z info: Cache hit: returning data fo id 1 from memory
+2026-03-15T06:11:32.435Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:06:11:32 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T06:11:42.253Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-15T06:11:42.263Z info:  ENCRYPTED : c8d65aba7bae697eb51e7995e268fc27:e3208bbed5dca0f85968d7b42e44168f84944e314584c169a58328505702b806
+2026-03-15T06:11:42.264Z info: DECRYPTED : Saurav a  Backend 
+2026-03-15T06:11:42.264Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-15T06:11:42.265Z info:  Master Server is LIVE on port 8000
+2026-03-15T06:11:43.647Z debug:  Sniper Search: ID 1
+2026-03-15T06:11:43.654Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-15T06:11:43.661Z info: Found: hacked title
+2026-03-15T06:11:43.669Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:06:11:43 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-15T06:11:56.119Z info: Cache hit: returning data fo id 1 from memory
+2026-03-15T06:11:56.121Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:06:11:56 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
