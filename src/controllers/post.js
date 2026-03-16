@@ -1,19 +1,18 @@
+import redisClient from "../config/redis.js";
 import Post from "../models/post.js";
 import logger from "../utils/logger.js";
-
-
-const simpleCache = {};
-
 
 export const getPost = async (req, res) => {
     try {
         const { id } = req.params;
         const cacheKey = `post-${id}`;
 
-        if (simpleCache[cacheKey]) {
-            logger.info(`Cache hit: returning data fo id ${id} from memory`);
-            return res.json(simpleCache[cacheKey]);
+        const cachedPost = await redisClient.get(cacheKey);
+        if (cachedPost) {
+            logger.info(`Redis HIT: Found Post ${id} in fast memory`);
+            return res.JSON.parse(cachedPost);
         }
+
 
         logger.debug(` Sniper Search: ID ${id}`);
         const post = await Post.findByPk(id);
@@ -24,10 +23,10 @@ export const getPost = async (req, res) => {
             return res.status(404).json({ message: "Post not found" });
         }
 
-        simpleCache[cacheKey] = post;
-        
+        await redisClient.set(cacheKey, JSON.stringify(post), {
+            EX: 60
+        })
 
-        logger.info(`Found: ${post.title}`);
         res.json(post);
 
     } catch (error) {

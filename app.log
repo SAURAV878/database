@@ -687,3 +687,59 @@
 2026-03-15T10:12:02.516Z debug: Executing (default): SELECT `id`, `username`, `email`, `password`, `salt`, `role`, `createdAt`, `updatedAt` FROM `Users` AS `User` WHERE `User`.`email` = 'hero@gmail.com';
 2026-03-15T10:12:02.523Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:12:02 +0000] "POST /login HTTP/1.1" 200 223 "-" "bruno-runtime/3.1.4"
 2026-03-15T10:12:12.897Z http: ::ffff:127.0.0.1 - - [15/Mar/2026:10:12:12 +0000] "DELETE /admin HTTP/1.1" 200 45 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:31:28.380Z info: Redis Client: Ready and Connected
+2026-03-16T07:31:28.430Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-16T07:31:28.438Z info:  ENCRYPTED : bd059462c88deb0d57b173ad02b8aaaa:b1dc434bfdfb4ae3cb10c2162feccdaea4ec334817f0382b1dc5a2456f8da258
+2026-03-16T07:31:28.439Z info: DECRYPTED : Saurav a  Backend 
+2026-03-16T07:31:28.439Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-16T07:31:28.440Z info:  Master Server is LIVE on port 8000
+2026-03-16T07:35:32.109Z info: Redis Client: Ready and Connected
+2026-03-16T07:35:32.141Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-16T07:35:32.146Z info:  Master Server is LIVE on port 8000
+2026-03-16T07:36:17.438Z info: Redis Client: Ready and Connected
+2026-03-16T07:36:17.477Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-16T07:36:17.484Z info:  ENCRYPTED : a891b8b4b3782aa6ae0a0d5c1578b8e4:abff3005ed80d1cbdddafff7971bcda754e6dcbb9d9fbcbcb58dbadbc3672618
+2026-03-16T07:36:17.485Z info: DECRYPTED : Saurav a  Backend 
+2026-03-16T07:36:17.485Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-16T07:36:17.486Z info:  Master Server is LIVE on port 8000
+2026-03-16T07:45:03.250Z info: Redis Client: Ready and Connected
+2026-03-16T07:45:03.301Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-16T07:45:03.308Z info:  ENCRYPTED : 910f6304e88148378a36130e4b8e27ac:ec99e00591d2891fddb32a4ce4686a893f4016b735f405fb57ceb0de130c7203
+2026-03-16T07:45:03.309Z info: DECRYPTED : Saurav a  Backend 
+2026-03-16T07:45:03.309Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-16T07:45:03.310Z info:  Master Server is LIVE on port 8000
+2026-03-16T07:45:39.242Z http: ::1 - - [16/Mar/2026:07:45:39 +0000] "POST /encryp HTTP/1.1" 404 146 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:46:14.947Z http: ::1 - - [16/Mar/2026:07:46:14 +0000] "POST /posts/2 HTTP/1.1" 404 147 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:46:23.126Z debug:  Sniper Search: ID 2
+2026-03-16T07:46:23.144Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-16T07:46:23.188Z warn:  Post not found: ID 2
+2026-03-16T07:46:23.191Z http: ::1 - - [16/Mar/2026:07:46:23 +0000] "GET /posts/2 HTTP/1.1" 404 28 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:46:25.466Z debug:  Sniper Search: ID 1
+2026-03-16T07:46:25.468Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-16T07:46:25.475Z http: ::1 - - [16/Mar/2026:07:46:25 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:46:27.868Z debug:  Sniper Search: ID 2
+2026-03-16T07:46:27.869Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '2';
+2026-03-16T07:46:27.871Z warn:  Post not found: ID 2
+2026-03-16T07:46:27.873Z http: ::1 - - [16/Mar/2026:07:46:27 +0000] "GET /posts/2 HTTP/1.1" 404 28 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:46:29.746Z warn: Rate limit is execced by IP: ::1
+2026-03-16T07:46:46.704Z http: ::1 - - [16/Mar/2026:07:46:46 +0000] "GET /posts HTTP/1.1" 404 144 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:46:50.105Z info: Redis HIT: Found Post 1 in fast memory
+2026-03-16T07:46:50.106Z http: ::1 - - [16/Mar/2026:07:46:50 +0000] "GET /posts/1 HTTP/1.1" 200 157 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:47:03.921Z info: Redis HIT: Found Post 1 in fast memory
+2026-03-16T07:47:03.922Z http: ::1 - - [16/Mar/2026:07:47:03 +0000] "GET /posts/1 HTTP/1.1" 200 157 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:47:48.228Z info: Redis Client: Ready and Connected
+2026-03-16T07:47:48.284Z debug: Executing (default): SELECT 1+1 AS result
+2026-03-16T07:47:48.293Z info:  ENCRYPTED : 64cae706ed7b24fa03e2f4bdd6270132:b2d52736dbb34a2a534acd6bf2b8bd37e6dd9f4eae1bd7966a8c9ce966144c20
+2026-03-16T07:47:48.294Z info: DECRYPTED : Saurav a  Backend 
+2026-03-16T07:47:48.294Z info: SUCCESS: The Two-Way Street is perfect!
+2026-03-16T07:47:48.295Z info:  Master Server is LIVE on port 8000
+2026-03-16T07:47:50.860Z debug:  Sniper Search: ID 1
+2026-03-16T07:47:50.867Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-16T07:47:50.883Z http: ::1 - - [16/Mar/2026:07:47:50 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:47:54.389Z info: Redis HIT: Found Post 1 in fast memory
+2026-03-16T07:47:54.390Z http: ::1 - - [16/Mar/2026:07:47:54 +0000] "GET /posts/1 HTTP/1.1" 200 157 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:47:56.788Z info: Redis HIT: Found Post 1 in fast memory
+2026-03-16T07:47:56.790Z http: ::1 - - [16/Mar/2026:07:47:56 +0000] "GET /posts/1 HTTP/1.1" 200 157 "-" "bruno-runtime/3.1.4"
+2026-03-16T07:50:57.354Z debug:  Sniper Search: ID 1
+2026-03-16T07:50:57.363Z debug: Executing (default): SELECT `id`, `title`, `content`, `createdAt`, `updatedAt` FROM `Posts` AS `Post` WHERE `Post`.`id` = '1';
+2026-03-16T07:50:57.368Z http: ::1 - - [16/Mar/2026:07:50:57 +0000] "GET /posts/1 HTTP/1.1" 200 137 "-" "bruno-runtime/3.1.4"
